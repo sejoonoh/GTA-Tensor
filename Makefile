@@ -1,21 +1,21 @@
 CXX=g++
 
-OPT = -I lib -O2 -mcmodel=medium  -fopenmp -w 
+OPT = -I lib -O2 -lOpenCL  -mcmodel=medium  -fopenmp -w 
 
 CXXFLAGS = $(DEBUG) $(FINAL) $(OPT) $(EXTRA_OPT)
 
-all: GTA
+all: demo
 
-GTA: GTA.cpp 
+GTA: src/GTA.cpp 
 	$(CXX) $(CXXFLAGS)  -o $@  $<
 
-demo: GTA.cpp
-	g++ -I lib -o GTA GTA.cpp -O2 -fopenmp -w -mcmodel=medium
-	./GTA sample/input.txt sample/result 3 10 20
+demo: src/GTA.cpp
+	$(CXX) $(CXXFLAGS)  -o $@  $<
+	./demo.sh
 
 
 .PHONY: clean
 
 clean:
-	rm -f GTA
+	rm -f GTA demo
 
