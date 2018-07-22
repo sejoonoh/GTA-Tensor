@@ -6,7 +6,7 @@ Overview
 **A General Framework for Tucker Factorization on Heterogeneous Platforms**  
 [Sejoon Oh](https://www.sejoonoh.com/), [Namyong Park](http://namyongpark.com/), [Jungi Jang](https://datalab.snu.ac.kr/~jkjang/), [Lee Sael](https://leesael.github.io/), and [U Kang](https://datalab.snu.ac.kr/~ukang/)
 
-[[Paper](https://datalab.snu.ac.kr/ptucker/ptucker.pdf)] [[Supplementary Material](https://datalab.snu.ac.kr/ptucker/supple.pdf)] (Submitted to TPDS Journal)
+[[Paper](https://datalab.snu.ac.kr/GTA/paper.pdf)] [[Supplementary Material](https://datalab.snu.ac.kr/GTA/supple.pdf)] (Submitted to TPDS Journal)
 
 Usage
 ---------------
