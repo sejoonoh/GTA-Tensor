@@ -15,9 +15,9 @@ Usage
 
 "make" command will create a single executable file, which is "GTA".
 
-The executable file takes five arguments, which are the path of input tensor file, path of directory for storing results, tensor order, tensor rank, and number of threads. The arguments MUST BE valid and in the above order.
+The executable file takes five arguments, which are the path of input tensor file, path of directory for storing results, tensor rank, local size (64, 256, 512, and 1024 are recommended), number of GPUs, binary number indicating POTF (1) or FOTF (0). The arguments MUST BE valid and in the above order.
 
-		ex) ./GTA input.txt result/ 3 10 20
+		ex) ./GTA input.txt result/ 10 256 1 1
 
 If you put the command properly, GTA will write all values of factor matrices and a core tensor in the result directory set by an argument. (PLEASE MAKE SURE THAT YOU HAVE A WRITE PERMISSION TO THE RESULT DIRECTORY!).
 
@@ -30,7 +30,7 @@ Demo
 To run the demo, please follow the following procedure. Sample tensor is created as 100x100x100 size with 1,000 observable entries.
 
 	1. Type "make demo"
-	2. Check "sample/result" directory for the demo factorization results
+	2. Check "result" directory for the demo factorization results
   
 Orthogonalization of Factor Matrices
 ---------------
