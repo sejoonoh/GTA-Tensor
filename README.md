@@ -35,9 +35,9 @@ To run the demo, please follow the following procedure. Sample tensor is created
 Dataset
 ---------------
 | Name | Structure | Size | Number of Nonzeros | Download |
-| :------------ | :-----------: | :-------------: |:------------: |:------------------: |
-| Netflix     | (User, Movie, Year-month; rating) | 480K &times; 18K &times; 74 | 100M | [DOWN](https://datalab.snu.ac.kr/data/GTA/netflix.zip) |
-| MovieLens     | (User, Movie, Year, Hour; rating) | 138K &times; 27K &times; 21;  24 | 20M | [DOWN](https://datalab.snu.ac.kr/data/GTA/movielens.zip) |
+| :------------: | :-----------: | :-------------: |:------------: |:------------------: |
+| Netflix     | (User, Movie, Year-month; Rating) | 480K &times; 18K &times; 74 | 100M | [DOWN](https://datalab.snu.ac.kr/data/GTA/netflix.zip) |
+| MovieLens     | (User, Movie, Year, Hour; Rating) | 138K &times; 27K &times; 21 &times;  24 | 20M | [DOWN](https://datalab.snu.ac.kr/data/GTA/movielens.zip) |
 | DBLP     | (Author, Conference, Year; Count) | 418K &times; 4K &times; 50 | 1.3M | [DOWN](https://datalab.snu.ac.kr/data/GTA/DBLP.zip) |
 | Facebook     | (User 1, User 2, Date; Friendship) | 64K &times; 64K &times; 870 | 1.5M | [DOWN](https://datalab.snu.ac.kr/data/GTA/facebook.zip) |
 | Synthetic     | Synthetic random tensors | 10K &times; 10K &times;  10K &times; 10K | ~10M |  |
