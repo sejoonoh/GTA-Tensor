@@ -1,9 +1,9 @@
-# GTA
+# High-Performance Tucker Factorization on Heterogeneous Platforms
 
 Overview
 ---------------
 
-**A General Framework for Tucker Factorization on Heterogeneous Platforms**  
+**High-Performance Tucker Factorization on Heterogeneous Platforms**  
 [Sejoon Oh](https://www.sejoonoh.com/), [Namyong Park](http://namyongpark.com/), [Jungi Jang](https://datalab.snu.ac.kr/~jkjang/), [Lee Sael](https://leesael.github.io/), and [U Kang](https://datalab.snu.ac.kr/~ukang/)
 
 [[Paper](https://datalab.snu.ac.kr/GTA/paper.pdf)] [[Supplementary Material](https://datalab.snu.ac.kr/GTA/supple.pdf)] (Submitted to TPDS Journal)
