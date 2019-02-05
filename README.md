@@ -45,4 +45,4 @@ Dataset
 Orthogonalization of Factor Matrices
 ---------------
 
-You can apply QR decompositions to output factor matrices and core tensor according to the main paper using MATLAB or other languages. Notice that current version of P-Tucker does not orthogonalize factor matrices and update a core tensor.
+You can apply QR decompositions to output factor matrices according to the main paper using MATLAB or other languages. Notice that current version of GTA does not orthogonalize factor matrices by default.
