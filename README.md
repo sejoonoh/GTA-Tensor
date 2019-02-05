@@ -1,4 +1,4 @@
-# High-Performance Tucker Factorization on Heterogeneous Platforms
+# High-Performance Tucker Factorization on Heterogeneous Platforms (GTA)
 
 Overview
 ---------------
