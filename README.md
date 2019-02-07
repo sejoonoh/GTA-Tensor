@@ -6,7 +6,7 @@ Overview
 **High-Performance Tucker Factorization on Heterogeneous Platforms**  
 [Sejoon Oh](https://www.sejoonoh.com/), [Namyong Park](http://namyongpark.com/), [Jungi Jang](https://datalab.snu.ac.kr/~jkjang/), [Lee Sael](https://leesael.github.io/), and [U Kang](https://datalab.snu.ac.kr/~ukang/)
 
-[[Paper](https://datalab.snu.ac.kr/GTA/paper.pdf)] [[Supplementary Material](https://datalab.snu.ac.kr/GTA/supple.pdf)] (Submitted to TPDS Journal)
+[[Paper](https://github.com/sejoonoh/GTA-Tensor/blob/master/papers/GTA.pdf)] [[Supplementary Material](https://github.com/sejoonoh/GTA-Tensor/blob/master/papers/supple.pdf)] (Submitted to TPDS Journal)
 
 Usage
 ---------------
