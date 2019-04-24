@@ -15,15 +15,16 @@ Usage
 
 "make" command will create a single executable file, which is "GTA".
 
+Please review the below requirements before you run the code.
+
+**1. Input tensor must follow tab- or space-separated format (see the demo tensor).**  
+**2. It is highly recommended to modify the pre-defined size of tmp and tmp2 in kernel files (src/GTA_GPU_Delta.cl and src/GTA_reconstruction.cl).**  
+**3. For tmp size (must be larger than the tensor rank), 10~25 is recommended.**  
+**4. For tmp2 size (must be larger than the tensor order), 3~10 is recommended.**  
+
 The executable file takes five arguments, which are the path of input tensor file, path of directory for storing results, tensor rank (10~25 are recommended for Tucker), local size (64, 256, 512, and 1024 are recommended), number of GPUs (depends on your machine), binary number indicating POTF (1) or FOTF (0). The arguments MUST BE valid and in the above order.
 
 		ex) ./GTA input.txt result/ 10 256 1 1
-
-**Input tensor must follow tab- or space-separated format (see the demo tensor).**  
-**It is highly recommended to modify the pre-defined size of tmp and tmp2 in kernel files (src/GTA_GPU_Delta.cl and src/GTA_reconstruction.cl).**  
-**For tmp size (must be larger than the tensor rank), 10~25 is recommended.**  
-**For tmp2 size (must be larger than the tensor order), 3~10 is recommended.**  
-
 
 If you put the command properly, GTA will write all values of factor matrices and a core tensor in the result directory set by an argument. (PLEASE MAKE SURE THAT YOU HAVE A WRITE PERMISSION TO THE RESULT DIRECTORY!).
 
