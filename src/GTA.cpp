@@ -5,8 +5,8 @@
 * @author		Jun-gi Jang (elnino4@snu.ac.kr), Seoul National University
 * @author       Lee Sael (saellee@gmail.com), Seoul National University
 * @author       U Kang (ukang@snu.ac.kr), Seoul National University
-* @version      1.0
-* @date         2018-07-14
+* @version      1.1
+* @date         2019-04-24
 *
 * A General Framework for Tucker Factorization on Heterogeneous Platforms
 *
@@ -129,12 +129,12 @@ void Read_Tensor(char* Path) {
 	printf("Reading Input Tensor......\n");
 	FILE* fin = fopen(Path, "r");
 	FILE* fin2 = fopen(Path,"r");
-	char tmp[1005];
+	char tmp[10005];
 	int i, j,k;
 	float v;
 	int pos = 0,len;
 	X.nonzeros=X.order=0;
-	while(fgets(tmp,1005,fin2)){
+	while(fgets(tmp,10005,fin2)){
 		X.nonzeros++;
 		len = strlen(tmp);
 		if(X.nonzeros==1){
@@ -151,7 +151,7 @@ void Read_Tensor(char* Path) {
 	X.gpu_mode = 0;
 	for (i = 0; i < X.order; i++) X.dimension[i] = 0;
 	for (i = 0; i < X.nonzeros; i++) {
-		fgets(tmp, 1005, fin);
+		fgets(tmp, 10005, fin);
 		len = strlen(tmp);
 		int k = 0, idx = 0, flag = 0;
 		double mul = 0.1, val = 0;
@@ -803,7 +803,7 @@ void tensor_factorization(int rrank, char* Path) {
 	printf("Average Elapsed time per iteration: %lf\n\n", (omp_get_wtime() - avertime) / iter);
 
 	printf("\nWriting factor matrices and core tensor to file...\n");
-	char temp[50];
+	char temp[10005];
 	int pos = 0;
 	int mult = max_dim*rrank;
 	for (i = 0; i < order; i++) {
