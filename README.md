@@ -4,7 +4,7 @@ Overview
 ---------------
 
 **High-Performance Tucker Factorization on Heterogeneous Platforms**  
-[Sejoon Oh](https://www.sejoonoh.com/), [Namyong Park](http://namyongpark.com/), [Jungi Jang](https://datalab.snu.ac.kr/~jkjang/), [Lee Sael](https://leesael.github.io/), and [U Kang](https://datalab.snu.ac.kr/~ukang/)  
+[Sejoon Oh](https://sejoonoh.github.io/), [Namyong Park](http://namyongpark.com/), [Jungi Jang](https://datalab.snu.ac.kr/~jkjang/), [Lee Sael](https://leesael.github.io/), and [U Kang](https://datalab.snu.ac.kr/~ukang/)  
 *[IEEE Transactions on Parallel and Distributed Systems (TPDS)](https://www.computer.org/csdl/journal/td), 2019*  
 [[Paper](https://github.com/sejoonoh/GTA-Tensor/blob/master/papers/GTA.pdf)] [[Supplementary Material](https://github.com/sejoonoh/GTA-Tensor/blob/master/papers/supple.pdf)]
 
@@ -19,6 +19,7 @@ The executable file takes five arguments, which are the path of input tensor fil
 
 		ex) ./GTA input.txt result/ 10 256 1 1
 
+**Input tensor must follow tab- or space-separated format (see the demo tensor).
 **It is highly recommended to modify the pre-defined size of tmp and tmp2 in kernel files (src/GTA_GPU_Delta.cl and src/GTA_reconstruction.cl).**  
 **For tmp size (must be larger than the tensor rank), 10~25 is recommended.**  
 **For tmp2 size (must be larger than the tensor order), 3~10 is recommended.**  
