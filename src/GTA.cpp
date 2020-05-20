@@ -179,9 +179,9 @@ void Read_Tensor(char* Path) {
 		}
 		if(flag==0) val = idx;
         if(flag2 == 0){ 
-		    X.vale[i] = val;
+		    X.value[i] = val;
         }else{
-            X.value[i] = 0 * val;
+            X.value[i] = -val;
         }
 	}
 	X.partially_observed = nnz_mode; 
