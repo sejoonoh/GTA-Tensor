@@ -153,7 +153,7 @@ void Read_Tensor(char* Path) {
 	for (i = 0; i < X.nonzeros; i++) {
 		fgets(tmp, 10005, fin);
 		len = strlen(tmp);
-		int k = 0, idx = 0, flag = 0;
+		int k = 0, idx = 0, flag = 0, flag2 = 0;
 		double mul = 0.1, val = 0;
 		for (j = 0; j < len; j++) {
 			if (tmp[j] == ' ' || tmp[j] == '\t') {
@@ -173,9 +173,16 @@ void Read_Tensor(char* Path) {
 				val += idx;
 				flag = 1;
 			}
+			else if (tmp[j] == '-') {
+				flag2 = 1;
+			}
 		}
 		if(flag==0) val = idx;
-		X.value[i] = val;
+        if(flag2 == 0){ 
+		    X.value[i] = val;
+        }else{
+            X.value[i] = -val;
+        }
 	}
 	X.partially_observed = nnz_mode; 
 	X.local_size = l_size; 
